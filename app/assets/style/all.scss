@@ -1,23 +1,21 @@
-$color: #00cc99;
-
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+/* 匯流 */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+/* -- setting -- */
+@import "setting/_variable.scss";
+@import "setting/_util.scss";
+@import "setting/_reset.scss";
+@import "setting/_base.scss";
+@import "setting/_mixin.scss";
+@import "setting/_grid.scss";
+/* ---- */
+@import "_layout.scss";
+/* -- module -- */
+@import "module/_nav.scss";
+@import "module/_siteBanner.scss";
+@import "module/_pagination.scss";
+/* -- pages -- */
+@import "pages/_index.scss";
+@import "pages/_frame-opt.scss";
+@import "pages/_frame-sun.scss";
+@import "pages/_site.scss";
+@import "pages/_siteData.scss";
